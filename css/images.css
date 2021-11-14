@@ -50,10 +50,10 @@
 .icon-container::before {
     content: "";
     width: 10px;
-    height: 70px;
+    height: 65px;
     background: var(--cyan);
     position: absolute;
-    top: -69%;
+    top: -65%;
     left: 44px;
 }
 

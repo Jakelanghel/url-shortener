@@ -45,10 +45,7 @@ html, body {
     padding: 1em 0;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--dark-gray);
-}
+
 
 .nav-res {
     border-bottom: solid 1px hsl(257, 7%, 63%, .5);
@@ -101,9 +98,7 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     color: var(--grayish-violet);
 }
 
-.f-link:hover {
-    color: var(--cyan);
-}
+
 
 .link-padding {
     padding: 1em 0;
@@ -113,9 +108,6 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     padding: 0 .5em;
 }
 
-.s-link:hover {
-    filter: brightness(40%) saturate(100%) invert(88%) sepia(55%) saturate(353%) hue-rotate(108deg) brightness(94%) contrast(90%);
-}
 
 .short-url {
     color: var(--cyan);
@@ -143,10 +135,7 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     border-radius: 25px;
 }
 
-.btn-green:hover {
-    opacity: .5;
-    cursor: pointer;
-}
+
 
 .url-input,
 .url-btn {
@@ -163,12 +152,6 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     background: var(--cyan);
     color: var(--white);
     margin-top: 1em;
-}
-
-.url-btn:hover {
-    opacity: 1;
-    background: hsl(180, 66%, 70%);
-
 }
 
 .error {
@@ -212,10 +195,8 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     width: 50%;
 }
 
-.boost-btn:hover {
-    opacity: 1;
-    background: hsl(180, 66%, 70%);
-}
+
+
 
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

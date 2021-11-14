@@ -28,17 +28,12 @@ Users should be able to:
 
 #### Mobile Screenshots
 ![](./screen-shots/mobile-sc-1.png)
-![](./screen-shots/mobile-sc-2.png)
-![](./screen-shots/mobile-sc-3.png)
-![](./screen-shots/mobile-sc-4.png)
-![](./screen-shots/mobile-sc-5.png)
-![](./screen-shots/mobile-sc-6.png)
-![](./screen-shots/mobile-sc-7.png)
+
 
 #### Desktop Screenshots
-![](./screen-shots/desktop-sc-1.png)
-![](./screen-shots/desktop-sc-2.png)
-![](./screen-shots/desktop-sc-3.png)
+![](./screen-shots/dsktop-sc-1.png)
+![](./screen-shots/dsktop-sc-2.png)
+![](./screen-shots/dsktop-sc-3.png)
 
 
 ### Links

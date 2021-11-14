@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/Jakelanghel/url-shortener)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://jakelanghel.github.io/url-shortener/)
 
 ## My process
 

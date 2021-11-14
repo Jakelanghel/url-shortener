@@ -1,0 +1,75 @@
+.mobile-nav-icon {
+    border: none;
+    background: var(--white);
+    padding: 0;
+}
+
+.grey-filter {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(0%) saturate(122%) hue-rotate(179deg) brightness(86%) contrast(79%);
+}
+
+.hero-img {
+    background-image: url("../images/illustration-working.svg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: -15% bottom;
+
+}
+
+.shortner {
+    background-image: url("../images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(257, 27%, 26%);
+    background-position: 100px -30px;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--dark-blue);
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    background-size: 50%;
+}
+
+.brand-icon {
+    background-image: url("../images/icon-brand-recognition.svg");
+
+}
+
+.records-icon {
+    background-image: url("../images/icon-detailed-records.svg");
+}
+
+.customize-icon {
+    background-image: url("../images/icon-fully-customizable.svg");
+}
+
+.icon-container::before {
+    content: "";
+    width: 10px;
+    height: 70px;
+    background: var(--cyan);
+    position: absolute;
+    top: -69%;
+    left: 44px;
+}
+
+.brand > .icon-container::before {
+    display: none;
+}
+
+.boost-container {
+    background-image: url("../images/bg-boost-mobile.svg");
+    background-color: hsl(257, 27%, 26%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6em 1em;
+}   
+
+.footer-logo {
+    width: 40%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(255deg) brightness(103%) contrast(103%);    
+}

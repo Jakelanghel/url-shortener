@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/images.css">
+  <link rel="stylesheet" href="css/desktop.css">
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="header-nav">
+        <img  class="logo" src="images/logo.svg" alt="Shortly logo">
+        <button class="mobile-nav-icon"><img src="images/hamburger-menu-svgrepo-com.svg" alt="navigation drop down button" class="grey-filter"></button>
+        <div class="mobile-nav-drop-down">
+          <a href="#" class="nav-link nav-feat">features</a>
+          <a href="#" class="nav-link nav-price">pricing</a>
+          <a href="#" class="nav-link nav-res">resources</a>
+          <a href="#" class="nav-link login">login</a>
+          <button class="sign-up btn-green">sign up</button>
+        </div>
+      </nav>
+
+      <div class="hero-img" aria-label="A person working on a computer"></div>
+      <h1 class="hero-title">More than just shorter links</h1>
+      <p class="hero-copy copy">Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+      <button class="hero-btn btn-green">get started</button>
+    </header>
+    <main class="main">
+      
+      <form action="" id="url-form" class="shortner">
+        <label for="url-form"></label>
+        <input class="url-input" id="input" type="text" placeholder="Shorten a link here..">
+        <p class="error-msg"></p>
+        <button class="btn-green url-btn">shorten it!</button>
+      </form>
+
+      <div class="shorts-container"></div>
+    
+      <section class="features">
+        <div class="statistics">
+          <h2 class="stats-title">Advanced statistics</h2>
+          <p class="copy">
+            Track how your links are performing across the web with our 
+            advanced statistics dashboard.
+          </p>
+        </div>
+
+        <div class="feature-container brand">
+          <div class="icon-container brand-icon"></div>
+          <h2 class="feature-title">Brand Recognition</h2>
+          <p class="copy">
+            Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+
+        <div class="feature-container records">
+          <div class="icon-container records-icon"></div>
+          <h2 class="feature-title">Detailed Records</h2>
+          <p class="copy">
+            Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.
+          </p>
+        </div>
+
+        <div class="feature-container customize">
+          <div class="icon-container customize-icon"></div>
+          <h2 class="feature-title">Fully Customizable</h2>
+          <p class="copy">
+            Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.
+          </p>
+        </div>
+      </section>
+
+      <section class="boost">
+        <div class="boost-container">
+            <h2 class="boost-title">Boost your links today</h2>
+            <button class="btn-green boost-btn">Get Started</button>
+        </div>
+      </section>
+      <footer>
+        <nav class="footer-nav">
+          <div class="logo-container flex-col">
+            <img src="images/logo.svg" alt="Shortly logo" class="footer-logo">
+          </div>
+  
+          <div class="feature-links flex-col">
+            <p class="footer-title features-title">Features</p>
+            <a href="#" class="f-link features-link-1">Link Shortening</a>
+            <a href="#" class="f-link features-link-2 link-padding">Brand Links</a>
+            <a href="#" class="f-link features-link-3">Analytics</a>
+          </div>
+          
+          <div class="resources-links flex-col">
+            <p class="footer-title resources-title">Resources</p>
+            <a href="#" class="f-link resources-link-1">Blog</a>
+            <a href="#" class="f-link resources-link-2 link-padding">Developers</a>
+            <a href="#" class="f-link resources-link-3">Support</a>
+          </div>
+  
+          <div class="footer-title company-links flex-col">
+            <p class="footer-title company-title">Company</p>
+            <a href="#" class="f-link company-link-1">About</a>
+            <a href="#" class="f-link company-link-2 link-padding">Our Team</a>
+            <a href="#" class="f-link company-link-3">Careers</a>
+            <a href="#" class="f-link company-link-4 link-padding">Contact</a>
+          </div>
+
+          <div class="social-media">
+            <a href="" class="s-link"><img src="images/icon-facebook.svg" alt="A link to facebook"></a>
+            <a href="" class="s-link"><img src="images/icon-twitter.svg" alt="A link to twitter"></a>
+            <a href="" class="s-link"><img src="images/icon-pinterest.svg" alt="A link to pintrest"></a>
+            <a href="" class="s-link"><img src="images/icon-instagram.svg" alt="A link to instagram"></a>
+          </div>
+        </nav>
+      </footer>
+    </main>
+  </div>
+
+  <template id="short-temp">
+    <div class="short-container">
+      <p class="og-url"></p>
+      <p class="short-url"></p>
+      <button class="copy-btn btn-green" onclick="copyUrl(this)">Copy</button>
+    </div>
+  </template>
+  <script src="js/index.js"></script>
+</body>
+</html>

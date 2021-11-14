@@ -1,0 +1,265 @@
+:root  {
+    --light-gray: hsl(0, 0%, 75%);
+    --lighter-gray: #eeede7;
+    --dark-gray: hsl(260, 8%, 14%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --dark-blue: hsl(255, 11%, 22%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --darker-violet: hsl(260, 8%, 14%);
+    --cyan: hsl(180, 66%, 49%);
+    --white: #fff;
+    --red: hsl(0, 87%, 67%);
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ================== */
+/* MOBILE-NAV ======= */
+/* ================== */
+
+.mobile-nav-drop-down {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 20px;
+    letter-spacing: 1px;;
+    transform: translateX(-50%);
+    flex-direction: column;
+    background:var(--dark-violet);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1em 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--dark-gray);
+}
+
+.nav-res {
+    border-bottom: solid 1px hsl(257, 7%, 63%, .5);
+    padding-bottom: 2em;
+}
+
+.login {
+    padding: 2em 0;
+}
+
+.sign-up {
+    margin-bottom: 1em;
+}
+
+/* ================== */
+/*  TYPOGRAPYH ====== */
+/* ================== */
+
+h1, h2, h3, p { margin: 0; padding: 0; }
+
+.copy {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    line-height: 1.75em;
+    color: hsl(260, 8%, 14%);
+    opacity: .5;
+}
+
+.hero-title {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+.stats-title {
+    font-size: 1.75em;
+}
+
+.footer-title {
+    padding-bottom: 1em;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.f-link {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--grayish-violet);
+}
+
+.f-link:hover {
+    color: var(--cyan);
+}
+
+.link-padding {
+    padding: 1em 0;
+}
+
+.s-link {
+    padding: 0 .5em;
+}
+
+.s-link:hover {
+    filter: brightness(40%) saturate(100%) invert(88%) sepia(55%) saturate(353%) hue-rotate(108deg) brightness(94%) contrast(90%);
+}
+
+.short-url {
+    color: var(--cyan);
+    padding: 1em;
+}
+
+.boost-title {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-bottom: 1em
+}
+
+
+/* ================== */
+/*  BUTTONS / INPUT = */
+
+.btn-green {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: .75em 1.25em;
+    background-color: var(--cyan);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-green:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.url-input,
+.url-btn {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.url-btn {
+    font-weight: 700;
+    background: var(--cyan);
+    color: var(--white);
+    margin-top: 1em;
+}
+
+.url-btn:hover {
+    opacity: 1;
+    background: hsl(180, 66%, 70%);
+
+}
+
+.error {
+    border: solid 4px var(--red);
+}
+
+.error-msg {
+    display: none;
+    text-align: left;
+    color: var(--red);
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px 0 0 0;
+}
+
+.short-container {
+    width: 85%;
+    /* padding: 1em .5em; */
+    margin: 0 auto 1.5em auto;
+    background: var(--white);
+}
+
+.og-url {
+    border-bottom: solid 1px var(--light-gray);
+    padding: 1em;
+    text-align: left;
+}
+
+.short-url {
+    text-align: left;
+    padding: 1em;
+}
+
+.copy-btn {
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.boost-btn {
+    width: 50%;
+}
+
+.boost-btn:hover {
+    opacity: 1;
+    background: hsl(180, 66%, 70%);
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--dark-gray);
+    opacity: 1; /* Firefox */
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--dark-gray);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--dark-gray);
+}
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,159 @@
+.flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ================== */
+/* HEADER =========== */
+
+header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    position: relative;
+}
+
+.header-nav {
+    display: grid;
+    grid-column: 1 / span 12;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 50px;
+    align-items: end;
+}
+
+.logo {
+    grid-column: 2 /span 5;
+    grid-row: 2;
+}
+
+.mobile-nav-icon {
+    grid-column: 11;
+    grid-row: 2;
+}
+
+.mobile-nav-icon > img {
+    width: 125%;
+}
+
+.hero-img {
+    grid-column: 1 / span 12; 
+    grid-row: 3 / span 10;       
+}
+
+.hero-title {
+    grid-column: 1 / span 12;
+    grid-row: 14 / span 3;
+}
+
+.hero-copy {
+    grid-column: 1 / span 12;
+    grid-row: 17 / span 5;
+}
+
+.hero-btn {
+    grid-column: 1 / span 12;
+    grid-row: 21 / span 1;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* ================== */
+/* MAIN ============= */
+
+main {
+    background: var(--lighter-gray);
+    margin-top: 4em;
+}
+
+.shorts-container {
+    display: none;
+    padding-top: 8em;
+}
+
+.shortner {
+    width: 75%;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+/* ================== */
+/* FEATURES ========= */
+
+.features {
+    padding-top: 10em;
+    display: grid;
+    grid-template-rows: .5fr 1fr 115px 1fr 115px 1fr 115px;
+}
+
+.statistics {
+    grid-row: 1;
+    margin-bottom: 5em;
+}
+
+.brand {
+    grid-row: 2;
+}
+
+.records {
+    grid-row: 4;
+}
+
+.customize {
+    grid-row: 6;
+}
+
+.feature-container {
+    width: 85%;
+    position: relative;
+    padding: 5em .5em 2em .5em;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 10px;;
+}
+
+.icon-container {
+    position: absolute;
+    top: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ================== */
+/* FOOTER =========== */
+
+.footer-nav {
+    display: grid;
+    grid-template-rows: repeat(3, 50px) auto 50px auto 50px 300px 100px;
+    align-items: start;
+    background: var(--darker-violet);
+}
+
+.logo-container {
+    grid-row: 2;
+    align-self: end;
+}
+
+.feature-links {
+    grid-row: 4;
+}
+
+.resources-links {
+    grid-row: 6;
+}
+
+.company-links {
+    grid-row: 8;
+}
+
+.social-media {
+    grid-row: 9;
+}

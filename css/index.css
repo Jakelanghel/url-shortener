@@ -8,7 +8,7 @@
     --darker-violet: hsl(260, 8%, 14%);
     --cyan: hsl(180, 66%, 49%);
     --white: #fff;
-    --red: hsl(0, 87%, 67%);
+    --red: hsl(0, 87%, 55%);
 }
 
 html, body {
@@ -125,12 +125,20 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 /*  BUTTONS / INPUT = */
 
 .btn-green {
+    background-color: var(--cyan);
+}
+
+.btn-red {
+    background-color: var(--red);
+}
+
+.btn-green,
+.btn-red {
+    color: var(--white);
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
     padding: .75em 1.25em;
-    background-color: var(--cyan);
-    color: var(--white);
     border: none;
     border-radius: 25px;
 }
@@ -185,10 +193,15 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     padding: 1em;
 }
 
-.copy-btn {
+.copy-btn,
+.delete-btn {
     width: 90%;
     border-radius: 5px;
     margin-bottom: 1em;
+}
+
+.delete-btn {
+
 }
 
 .boost-btn {

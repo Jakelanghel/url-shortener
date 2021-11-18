@@ -164,6 +164,12 @@ const shortenUrl = (e) => {
     }
 }
 
+const deleteShorts = () => {
+    localStorage.clear()
+    window.location.reload()
+    console.log("X")
+}
+
 
 getLocalStorage()
 urlForm.addEventListener("submit", shortenUrl)

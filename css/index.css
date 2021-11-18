@@ -169,14 +169,14 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 
 .short-container {
     width: 85%;
-    /* padding: 1em .5em; */
     margin: 0 auto 1.5em auto;
     background: var(--white);
+    padding: 1em;
 }
 
 .og-url {
     border-bottom: solid 1px var(--light-gray);
-    padding: 1em;
+    padding: 0 0 15px 0;
     text-align: left;
 }
 
@@ -194,9 +194,6 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 .boost-btn {
     width: 50%;
 }
-
-
-
 
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

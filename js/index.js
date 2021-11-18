@@ -50,6 +50,7 @@ const empty = () => {
 const checkUsrInput = () => {
     const input = document.getElementById("input")
     const usrInput = input.value
+    input.value = ""
     const url = usrInput === "" ? empty() : usrInput 
     return url
 }

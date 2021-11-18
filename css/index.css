@@ -11,6 +11,13 @@
     --red: hsl(0, 87%, 55%);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 html, body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -22,7 +29,7 @@ html, body {
 /* MOBILE-NAV ======= */
 /* ================== */
 
-.mobile-nav-drop-down {
+.nav-items {
     display: none;
     width: 80%;
     position: absolute;
@@ -124,6 +131,11 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 /* ================== */
 /*  BUTTONS / INPUT = */
 
+.nav-icon {
+    border: none;
+    background: var(--white)
+}
+
 .btn-green {
     background-color: var(--cyan);
 }
@@ -177,11 +189,16 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 }
 
 .short-container {
-    width: 85%;
+    width: 90%;
+    flex-direction: column;
     overflow: hidden;
     margin: 0 auto 1.5em auto;
     background: var(--white);
     padding: 1em;
+    white-space: -moz-pre-wrap;      
+    white-space: -pre-wrap;        
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;      
 }
 
 .og-url {

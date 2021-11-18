@@ -3,21 +3,25 @@ const mobileNavBtn = document.querySelector(".mobile-nav-icon")
 
 
 // ====================
-// Navigation Functions
+// Navigation 
 
-let navClickCount = 0;
-
-const handelNavClick = () => {
-    navClickCount ++ 
-    const mobileNav = document.querySelector(".mobile-nav-drop-down")
-    mobileNav.style.display = "flex"
+const toggleNav = () => {
+    const nav = documnet.getElementById("")
 }
 
-const hideNav = () => {
-    const mobileNav = document.querySelector(".mobile-nav-drop-down")
-    mobileNav.style.display = "none"
-    navClickCount = 0
-}
+// let navClickCount = 0;
+
+// const handelNavClick = () => {
+//     navClickCount ++ 
+//     const mobileNav = document.querySelector(".mobile-nav-drop-down")
+//     mobileNav.style.display = "flex"
+// }
+
+// const hideNav = () => {
+//     const mobileNav = document.querySelector(".mobile-nav-drop-down")
+//     mobileNav.style.display = "none"
+//     navClickCount = 0
+// }
 
 // ====================
 // Error Handling
@@ -173,7 +177,7 @@ const deleteShorts = () => {
 
 getLocalStorage()
 urlForm.addEventListener("submit", shortenUrl)
-mobileNavBtn.addEventListener("click", handelNavClick)
+mobileNavBtn.addEventListener("click", toggleNav())
 // localStorage.clear()
 
 

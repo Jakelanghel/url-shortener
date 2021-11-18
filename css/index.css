@@ -140,7 +140,8 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     text-transform: capitalize;
     padding: .75em 1.25em;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
+    margin-bottom: 1em;
 }
 
 
@@ -177,6 +178,7 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 
 .short-container {
     width: 85%;
+    overflow: hidden;
     margin: 0 auto 1.5em auto;
     background: var(--white);
     padding: 1em;
@@ -193,15 +195,13 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     padding: 1em;
 }
 
-.copy-btn,
-.delete-btn {
+
+.copy-btn {
     width: 90%;
-    border-radius: 5px;
-    margin-bottom: 1em;
 }
 
 .delete-btn {
-
+    width: 75%;
 }
 
 .boost-btn {

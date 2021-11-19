@@ -40,22 +40,23 @@ header {
 
 .hero-img {
     grid-column: 1 / span 12; 
-    grid-row: 3 / span 10;       
+    grid-row: 3 / span 11;       
 }
 
 .hero-title {
     grid-column: 1 / span 12;
-    grid-row: 14 / span 3;
+    grid-row: 15 / span 3;
 }
 
 .hero-copy {
     grid-column: 1 / span 12;
     grid-row: 17 / span 5;
+    padding-top: 2em;
 }
 
 .hero-btn {
     grid-column: 1 / span 12;
-    grid-row: 21 / span 1;
+    grid-row: 22 / span 1;
     width: 50%;
     margin: 0 auto;
 }
@@ -65,7 +66,7 @@ header {
 
 main {
     background: var(--lighter-gray);
-    margin-top: 4em;
+    margin-top: 7.5em;
     position: relative;
 }
 

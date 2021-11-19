@@ -23,21 +23,25 @@ html, body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 /* ================== */
 /* MOBILE-NAV ======= */
 /* ================== */
 
+
+
 .nav-items {
-    display: none;
+    display: flex;
     width: 80%;
     position: absolute;
     top: 15%;
     left: 50%;
     font-size: 20px;
     letter-spacing: 1px;;
-    transform: translateX(-50%);
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
     flex-direction: column;
     background:var(--dark-violet);
     padding: 1em;
@@ -53,10 +57,13 @@ html, body {
 }
 
 
-
 .nav-res {
     border-bottom: solid 1px hsl(257, 7%, 63%, .5);
     padding-bottom: 2em;
+}
+
+.nav-open {
+    transform: translateX(-50%);
 }
 
 .login {
@@ -147,12 +154,13 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 .btn-green,
 .btn-red {
     color: var(--white);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
+    letter-spacing: 1px;
     text-transform: capitalize;
-    padding: .75em 1.25em;
+    padding: 1em 1.5em;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-bottom: 1em;
 }
 
@@ -222,7 +230,7 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 }
 
 .boost-btn {
-    width: 50%;
+    width: 60%;
 }
 
 

@@ -19,11 +19,11 @@
     <header>
       <nav class="header-nav">
         <img  class="logo" src="images/logo.svg" alt="Shortly logo">
-        <button class="nav-icon"><img src="images/hamburger-menu-svgrepo-com.svg" alt="navigation drop down button" class="grey-filter"></button>
-        <div class="nav-items">
-          <a href="#" class="nav-link nav-feat">features</a>
-          <a href="#" class="nav-link nav-price">pricing</a>
-          <a href="#" class="nav-link nav-res">resources</a>
+        <button class="nav-icon" id="hamburger"><img src="images/hamburger-menu-svgrepo-com.svg" alt="navigation drop down button" class="grey-filter"></button>
+        <div class="nav-items" id="nav">
+          <a href="#feat" class="nav-link nav-feat">features</a>
+          <a href="#res" class="nav-link nav-price">pricing</a>
+          <a href="#res" class="nav-link nav-res">resources</a>
           <a href="#" class="nav-link login">login</a>
           <button class="sign-up btn-green">sign up</button>
         </div>
@@ -47,7 +47,7 @@
       <div class="shorts-container"></div>
       <button class="delete-btn btn-red" onclick="deleteShorts()">Delete All</button>
     
-      <section class="features">
+      <section class="features" id="feat">
         <div class="statistics">
           <h2 class="stats-title">Advanced statistics</h2>
           <p class="copy">
@@ -91,7 +91,7 @@
         </div>
       </section>
       <footer>
-        <nav class="footer-nav">
+        <nav class="footer-nav" id="res">
           <div class="logo-container flex-col">
             <img src="images/logo.svg" alt="Shortly logo" class="footer-logo">
           </div>

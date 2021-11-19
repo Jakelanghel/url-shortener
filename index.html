@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <header>
-      <nav class="header-nav">
+      <nav class="top-nav">
         <img  class="logo" src="images/logo.svg" alt="Shortly logo">
         <button class="nav-icon" id="hamburger"><img src="images/hamburger-menu-svgrepo-com.svg" alt="navigation drop down button" class="grey-filter"></button>
         <div class="nav-items" id="nav">
@@ -29,7 +29,7 @@
         </div>
       </nav>
 
-      <div class="hero-img" aria-label="A person working on a computer"></div>
+      <div class="hero-img"></div>
       <h1 class="hero-title">More than just shorter links</h1>
       <p class="hero-copy copy">Build your brand’s recognition and get detailed insights 
         on how your links are performing.</p>
@@ -37,7 +37,7 @@
     </header>
     <main class="main">
       
-      <form id="url-form" class="shortner">
+      <form action="none" id="url-form" class="shortner">
         <input class="url-input" id="input" type="text" placeholder="Shorten a link here..">
         <p class="error-msg"></p>
         <button class="btn-green url-btn">shorten it!</button>
@@ -90,8 +90,9 @@
             <button class="btn-green boost-btn">Get Started</button>
         </div>
       </section>
+
       <footer>
-        <nav class="footer-nav" id="res">
+        <nav class="bottom-nav" id="res">
           <div class="logo-container flex-col">
             <img src="images/logo.svg" alt="Shortly logo" class="footer-logo">
           </div>
@@ -136,6 +137,7 @@
       <button class="copy-btn btn-green" onclick="copyUrl(this)">Copy</button>
     </div>
   </template>
+
   <script src="js/index.js"></script>
 </body>
 </html>

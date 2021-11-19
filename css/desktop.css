@@ -247,7 +247,7 @@
         width: 10%;
     }
 
-    .footer-nav {
+    .bottom-nav {
         height: 40vh;
         grid-template-rows: repeat(12, 1fr);
         grid-template-columns: repeat(12, 1fr);
@@ -386,7 +386,7 @@
         color: var(--cyan);
     }
 
-    .header-nav {
+    .top-nav {
         align-items: end;
     }
 

@@ -1,27 +1,16 @@
 const urlForm = document.getElementById("url-form")
-const mobileNavBtn = document.querySelector(".mobile-nav-icon")
+const hamburger = document.getElementById("hamburger")
+const links = document.querySelectorAll(".nav-link")
+
 
 
 // ====================
 // Navigation 
 
 const toggleNav = () => {
-    const nav = documnet.getElementById("")
+    const nav = document.querySelector(".nav-items")
+    nav.classList.toggle("nav-open")
 }
-
-// let navClickCount = 0;
-
-// const handelNavClick = () => {
-//     navClickCount ++ 
-//     const mobileNav = document.querySelector(".mobile-nav-drop-down")
-//     mobileNav.style.display = "flex"
-// }
-
-// const hideNav = () => {
-//     const mobileNav = document.querySelector(".mobile-nav-drop-down")
-//     mobileNav.style.display = "none"
-//     navClickCount = 0
-// }
 
 // ====================
 // Error Handling
@@ -177,7 +166,10 @@ const deleteShorts = () => {
 
 getLocalStorage()
 urlForm.addEventListener("submit", shortenUrl)
-mobileNavBtn.addEventListener("click", toggleNav())
+hamburger.addEventListener("click", toggleNav)
+links.forEach(link => {
+    link.addEventListener("click", toggleNav)
+})
 // localStorage.clear()
 
 

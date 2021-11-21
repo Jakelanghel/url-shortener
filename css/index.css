@@ -19,11 +19,13 @@
 
 
 html, body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     text-align: center;
     scroll-behavior: smooth;
+    width: 100vw;
+    margin: 0;
+
 }
 
 /* ================== */
@@ -35,11 +37,12 @@ html, body {
 .nav-items {
     display: flex;
     width: 80%;
-    position: absolute;
+    position: fixed;
     top: 15%;
     left: 50%;
+    z-index: 100;
     font-size: 20px;
-    letter-spacing: 1px;;
+    letter-spacing: 1px;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
     flex-direction: column;
@@ -63,6 +66,7 @@ html, body {
 }
 
 .nav-open {
+    display: flex;
     transform: translateX(-50%);
 }
 
@@ -142,6 +146,7 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     border: none;
     background: var(--white)
 }
+
 
 .btn-green {
     background-color: var(--cyan);
@@ -235,16 +240,16 @@ h1, h2, h3, p { margin: 0; padding: 0; }
 
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--dark-gray);
+    color: var(--light-gray);
     opacity: 1; /* Firefox */
   }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--dark-gray);
+    color: var(--light-gray);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--dark-gray);
+    color: var(--light-gray);
 }
 
     

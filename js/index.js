@@ -1,6 +1,9 @@
 const urlForm = document.getElementById("url-form")
 const hamburger = document.getElementById("hamburger")
 const links = document.querySelectorAll(".nav-link")
+const html = document.querySelector("html")
+console.log(html)
+
 
 
 
@@ -10,7 +13,17 @@ const links = document.querySelectorAll(".nav-link")
 const toggleNav = () => {
     const nav = document.querySelector(".nav-items")
     nav.classList.toggle("nav-open")
+    // html.addEventListener("click", closeNav)
+    
 }
+
+const closeNav = () => {
+    toggleNav()
+    html.removeEventListener("click", closeNav)
+    console.log("X")
+}
+
+
 
 // ====================
 // Error Handling

@@ -21,7 +21,6 @@ header {
     grid-column: 1 / span 12;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 25px 50px;
-    align-items: end;
 }
 
 .logo {
@@ -117,11 +116,11 @@ main {
 
 .feature-container {
     width: 85%;
+    background: var(--white);
     position: relative;
     padding: 5em .5em 2em .5em;
     margin: 0 auto;
-    background: var(--white);
-    border-radius: 10px;;
+    border-radius: 10px;
 }
 
 .icon-container {

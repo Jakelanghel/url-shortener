@@ -1,0 +1,41 @@
+@media(min-width: 1200px) {
+
+    .hero-copy {
+        max-width: 500px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .hero-btn {
+        margin-top: 1em;
+    }
+
+    .flex-col {
+        margin-right: 4em;
+    }
+
+    .features {
+        grid-template-rows: repeat(20, 1fr);
+    }
+
+    .brand {
+        grid-row: 9 / span 7;
+        grid-column: 2 / span 8;
+    }
+
+    .records {
+        grid-row: 10 / span 7;
+        grid-column: 10 / span 8;
+    }
+
+    .customize {
+        grid-row: 11 / span 7;
+        grid-column: 18 / span 8;
+
+    }
+
+    
+
+    
+}
+

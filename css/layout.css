@@ -39,25 +39,45 @@ header {
 
 .hero-img {
     grid-column: 1 / span 12; 
-    grid-row: 3 / span 11;       
+    grid-row: 3 / span 11; 
 }
 
 .hero-title {
     grid-column: 1 / span 12;
-    grid-row: 15 / span 3;
+    grid-row: 12 / span 3;
+    margin-top: 1em;      
 }
 
 .hero-copy {
     grid-column: 1 / span 12;
-    grid-row: 17 / span 5;
+    grid-row: 15 / span 5;
     padding-top: 2em;
 }
 
 .hero-btn {
     grid-column: 1 / span 12;
-    grid-row: 22 / span 1;
+    grid-row: 20 / span 1;
     width: 50%;
     margin: 0 auto;
+}
+
+@media(min-width: 400px) {
+
+    .hero-img {
+        grid-row: 3 / span 13;       
+    }
+
+    .hero-title {
+        grid-row: 14 / span 3;
+    }
+    
+    .hero-copy {
+        grid-row: 17 / span 5;
+    }
+    
+    .hero-btn {
+        grid-row: 22 / span 1;
+    }
 }
 
 /* ================== */
@@ -78,6 +98,7 @@ main {
 
 .shortner {
     width: 90%;
+    max-width: 1500px;
     position: absolute;
     top: -100px;
     left: 50%;
@@ -92,9 +113,8 @@ main {
 /* FEATURES ========= */
 
 .features {
-    padding-top: 10em;
     display: grid;
-    grid-template-rows: .5fr 1fr 115px 1fr 115px 1fr 115px;
+    grid-template-rows: .25fr 1fr 115px 1fr 115px 1fr 115px;
 }
 
 .statistics {
@@ -116,6 +136,7 @@ main {
 
 .feature-container {
     width: 85%;
+    max-width: 400px;
     background: var(--white);
     position: relative;
     padding: 5em .5em 2em .5em;

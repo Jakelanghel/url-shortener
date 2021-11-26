@@ -13,7 +13,13 @@
     background-size: 130%;
     background-repeat: no-repeat;
     background-position: -15% top;
+}
 
+@media (min-width: 475px) {
+    .hero-img {
+        background-size: contain;
+        background-position: center;
+    }
 }
 
 .shortner {
@@ -22,6 +28,14 @@
     background-size: contain;
     background-color: hsl(257, 27%, 26%);
     background-position: 100px -30px;
+}
+
+@media(min-width: 545px) {
+    .shortner {
+        background-image: url("../images/bg-shorten-desktop.svg");
+        background-size: cover;
+        background-position: -5px 0px;
+    }
 }
 
 .icon-container {
@@ -36,7 +50,6 @@
 
 .brand-icon {
     background-image: url("../images/icon-brand-recognition.svg");
-
 }
 
 .records-icon {
@@ -55,6 +68,20 @@
     position: absolute;
     top: -65%;
     left: 44px;
+}
+
+@media(min-width: 400px) {
+    .icon-container::before {
+        height: 70%;
+        top: -70%;
+    }
+}
+
+@media(min-width: 470px) {
+    .icon-container::before {
+        height: 72%;
+        top: -72%;
+    }
 }
 
 .brand > .icon-container::before {

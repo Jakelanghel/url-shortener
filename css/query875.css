@@ -1,0 +1,242 @@
+@media(min-width: 875px) {
+
+    .btn-green {
+        min-width: 125px
+    }
+
+    header {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        position: relative;
+        text-align: left;
+    }
+
+
+    .stats-title, 
+    .boost-title {
+        font-size: 3em;;
+    }
+
+    /* ======================== */
+    /* Header ================= */
+
+    .nav-icon {
+        display: none;
+    }
+
+    .top-nav {
+        grid-template-rows: 25px 1fr;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100%;
+        grid-column: 2 ;
+    }
+
+    .nav-items {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 3 / span 9;
+        position: static;
+        transform: translateX(0%);
+        padding: 0;
+        background: var(--white);
+        display: grid;
+        grid-template-columns: repeat(3, 150px) 1fr 150px 1fr;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        color: var(--light-gray);
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-feat {
+        grid-column: 1;
+        padding-left: 2.5em;
+        
+    }
+
+    .nav-price {
+        grid-column: 2;
+        padding-left: 2em;
+        padding-right:2em;
+    }
+
+    .nav-res {
+        grid-column: 3;
+        border-bottom: none;;
+    }
+
+    .login {
+        grid-column: 5;
+        padding: 0;
+        justify-self: end;
+        padding-right: 40px;
+        margin-left: 1em;
+    }
+
+    .sign-up {
+        font-size: 18px;
+        grid-column: 6;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .hero-img {
+        max-width: 525px;
+        grid-column: 7 / span 6; 
+        grid-row: 3 / span 11; 
+        background-size: 140%;
+        background-position: left bottom;
+        
+    }
+
+    .hero-title {
+        grid-column: 2 / span 5;
+        grid-row: 5 / span 3;
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-copy {
+        max-width: 300px;
+        grid-column: 2 / span 4;
+        grid-row: 8 / span 4;
+        max-width: 700px;
+        padding: 0;
+    }
+
+    .hero-btn {
+        width: 100%;
+        grid-column: 2 / span 2;
+        grid-row: 11 / span 1;
+        margin: 0;
+    }
+
+
+    /* ======================== */
+    /* shortner =============== */
+
+    .shortner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2.25em;
+        top: -75px;
+    }
+
+    .short-container {
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
+        margin: 0 auto 1.5em auto;
+        background: var(--white);
+        white-space: -moz-pre-wrap;      
+        white-space: -pre-wrap;        
+        white-space: -o-pre-wrap;    
+        word-wrap: break-word; 
+        align-items: center;    
+        padding: .5em; 
+    }
+
+    .og-url {
+        width: 50%;
+        border-bottom: none;
+        text-align: left;
+    }
+    
+    .short-url {
+        width: 25%;
+        text-align: right;
+        color: var(--cyan);
+    }
+
+    .copy-btn {
+        width: 15%;
+        margin: 0;
+        padding: .75em 1em;
+    }
+
+    .url-input,
+    .url-btn {
+        font-size: 18px;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin: 0 0 0 1em;
+    }
+
+    .url-input {
+        width: 70%;
+    }
+
+    .url-btn {
+        width: 20%;
+        max-width: 250px;
+        padding: 1em 1.5em
+    }
+
+    /* ======================== */
+    /* FOOTER ================= */
+
+    .bottom-nav {
+        height: 40vh;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        align-items: start;
+    }
+
+    .flex-col {
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 120%;
+        margin-bottom: 20px;
+    }
+
+    .logo-container {
+        width: 100px;
+        grid-row: 4;
+        grid-column: 2 / span 2;
+    }
+
+    .feature-links {
+        grid-row: 4 / span 5;
+        grid-column: 5 / span 2;
+        text-align: left;
+    }
+
+    .resources-links {
+        grid-row: 4 / span 7;
+        grid-column: 8;
+    }
+
+    .company-links {
+        grid-row: 4 / span 7;
+        grid-column: 10;
+    }
+
+    .social-media {
+        grid-row: 4 / span 3;
+        grid-column: 11;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s-link {
+        padding: .5em 0 .5em 5em;
+    }
+
+   
+}

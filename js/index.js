@@ -86,9 +86,10 @@ const copyUrl = (btn) => {
 const showShortContainer = (div) => {
     const shortsContainer = document.querySelector(".shorts-container")
     shortsContainer.style.display = "block"
-    shortsContainer.appendChild(div)
+    shortsContainer.style.flexDirection = "column"
+    shortsContainer.prepend(div)
     const features = document.querySelector(".features")
-    features.style.paddingTop = "5em"
+    features.style.paddingTop = "4em"
 }
 
 const displayUrl = res => {

@@ -17,27 +17,8 @@
     box-sizing: border-box;
 }
 
-
-html, body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    scroll-behavior: smooth;
-    width: 100vw;
-    margin: 0;
-
-}
-
-h1,h2,h3,p {
-    margin: 0;
-    padding: 0;
-}
-
 /* ================== */
-/* MOBILE-NAV ======= */
-/* ================== */
-
-
+/* NAV ============== */
 
 .nav-items {
     display: flex;
@@ -64,7 +45,6 @@ h1,h2,h3,p {
     padding: 1em 0;
 }
 
-
 .nav-res {
     border-bottom: solid 1px hsl(257, 7%, 63%, .5);
     padding-bottom: 2em;
@@ -81,11 +61,21 @@ h1,h2,h3,p {
 
 .sign-up {
     margin-bottom: 1em;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 /* ================== */
 /*  TYPOGRAPYH ====== */
 /* ================== */
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    scroll-behavior: smooth;
+    margin: 0;
+}
 
 h1, h2, h3, p { margin: 0; padding: 0; }
 
@@ -103,9 +93,59 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     margin: 0 auto;
 }
 
-
 .stats-title {
-    font-size: 1.75em;
+    font-size: 1.75rem;
+}
+
+.short-container {
+    width: 90%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto 1.5em auto;
+    background: var(--white);
+    white-space: -moz-pre-wrap;      
+    white-space: -pre-wrap;        
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;   
+    border-radius: 5px;   
+}
+
+.og-url {
+    border-bottom: solid 1px var(--light-gray);
+    padding: 1em;
+    text-align: left;
+}
+
+.short-url {
+    text-align: left;
+    padding: 1em;
+    color: var(--cyan);
+    padding: 1em;
+}
+
+.error {
+    border: solid 4px var(--red);
+}
+
+.error-msg {
+    display: none;
+    text-align: left;
+    color: var(--red);
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px 0 0 0;
+}
+
+.boost-title {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-bottom: 1.5em
+}
+
+.footer-logo {
+    max-width: 200px;
 }
 
 .footer-title {
@@ -121,29 +161,6 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     color: var(--grayish-violet);
 }
 
-
-
-.link-padding {
-    padding: 1em 0;
-}
-
-.s-link {
-    padding: 0 .5em;
-}
-
-
-.short-url {
-    color: var(--cyan);
-    padding: 1em;
-}
-
-.boost-title {
-    color: var(--white);
-    font-size: 1.5rem;
-    padding-bottom: 1em
-}
-
-
 /* ================== */
 /*  BUTTONS / INPUT = */
 
@@ -152,9 +169,9 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     background: var(--white)
 }
 
-
 .btn-green {
     background-color: var(--cyan);
+    min-width: 200px;
 }
 
 .btn-red {
@@ -174,8 +191,6 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     margin-bottom: 1em;
 }
 
-
-
 .url-input,
 .url-btn {
     font-size: 18px;
@@ -193,56 +208,73 @@ h1, h2, h3, p { margin: 0; padding: 0; }
     margin-top: 1em;
 }
 
-.error {
-    border: solid 4px var(--red);
-}
-
-.error-msg {
-    display: none;
-    text-align: left;
-    color: var(--red);
-    font-size: 16px;
-    font-style: italic;
-    padding: 5px 0 0 0;
-}
-
-.short-container {
-    width: 90%;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 0 auto 1.5em auto;
-    background: var(--white);
-    padding: 1em;
-    white-space: -moz-pre-wrap;      
-    white-space: -pre-wrap;        
-    white-space: -o-pre-wrap;    
-    word-wrap: break-word;      
-}
-
-.og-url {
-    border-bottom: solid 1px var(--light-gray);
-    padding: 0 0 15px 0;
-    text-align: left;
-}
-
-.short-url {
-    text-align: left;
-    padding: 1em;
-}
-
-
 .copy-btn {
-    width: 90%;
+    width: 95%;
+    margin-left: 1em;
+    border-radius: 5px;
 }
 
 .delete-btn {
     width: 75%;
+    margin: 0 auto;
+    border-radius: 5px;
+
 }
 
 .boost-btn {
     width: 60%;
 }
 
+.boost-btn,
+.hero-btn,
+.delete-btn {
+    max-width: 225px;
+
+}
+
+.url-btn:hover {
+    opacity: 1;
+    background: hsl(180, 66%, 70%);
+
+}
+
+.link-padding {
+    padding: 1em 0;
+}
+
+.s-link {
+    padding: 0 .5em;
+}
+
+
+/* Hover =============== */
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--dark-gray);
+}
+
+.btn-green:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+.s-link:hover {
+    filter: brightness(40%) saturate(100%) invert(88%) sepia(55%) saturate(353%) hue-rotate(108deg) brightness(94%) contrast(90%);
+}
+.f-link:hover {
+    color: var(--cyan);
+}
+
+.boost-btn:hover {
+    opacity: 1;
+    background: hsl(180, 66%, 70%);
+}
+
+.f-link:hover {
+    color: var(--cyan);
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--light-gray);

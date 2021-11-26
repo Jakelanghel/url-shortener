@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
 
     /* ======================== */
     /* Header */
@@ -26,7 +26,7 @@
         background: var(--white);
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        /* grid-template-rows: 25px 50px; */
+        grid-template-rows: 25px 50px;
     }
 
     .nav-link {
@@ -209,6 +209,8 @@
         display: none;
     }
 
+    
+
     .statistics {
         grid-row: 4 / span 4;
         grid-column: 9 / span 8;
@@ -352,45 +354,13 @@
         border-radius: 15px;;
     }
 
-    .nav-link:hover,
-    .nav-link:focus {
-        color: var(--dark-gray);
-    }
 
     .boost-btn {
         width: 15%;
         font-size: 25px;
     }
 
-    .url-btn:hover {
-        opacity: 1;
-        background: hsl(180, 66%, 70%);
     
-    }
-
-    /* Hover =============== */
-    
-    .btn-green:hover {
-        opacity: .5;
-        cursor: pointer;
-    }
-    
-    
-    .s-link:hover {
-        filter: brightness(40%) saturate(100%) invert(88%) sepia(55%) saturate(353%) hue-rotate(108deg) brightness(94%) contrast(90%);
-    }
-    .f-link:hover {
-        color: var(--cyan);
-    }
-
-    .boost-btn:hover {
-        opacity: 1;
-        background: hsl(180, 66%, 70%);
-    }
-    
-    .f-link:hover {
-        color: var(--cyan);
-    }
 
     .top-nav {
         align-items: end;

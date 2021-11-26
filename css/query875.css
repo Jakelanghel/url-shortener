@@ -115,10 +115,12 @@
 
     .hero-btn {
         width: 100%;
-        grid-column: 2 / span 2;
-        grid-row: 11 / span 1;
+        grid-column: 2 / span 4;
+        grid-row: 12 / span 1;
         margin: 0;
     }
+
+    
 
 
     /* ======================== */

@@ -70,13 +70,6 @@
     left: 44px;
 }
 
-@media(min-width: 400px) {
-    .icon-container::before {
-        height: 70%;
-        top: -70%;
-    }
-}
-
 @media(min-width: 470px) {
     .icon-container::before {
         height: 72%;

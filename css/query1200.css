@@ -15,21 +15,21 @@
     }
 
     .features {
-        grid-template-rows: repeat(17, 1fr);
+        grid-template-rows: repeat(15, 1fr);
     }
 
     .brand {
-        grid-row: 8 / span 5;
+        grid-row: 7 / span 5;
         grid-column: 2 / span 8;
     }
 
     .records {
-        grid-row: 9 / span 5;
+        grid-row: 8 / span 5;
         grid-column: 10 / span 8;
     }
 
     .customize {
-        grid-row: 10 / span 5;
+        grid-row: 9 / span 5;
         grid-column: 18 / span 8;
 
     }

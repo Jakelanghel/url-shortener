@@ -13,10 +13,25 @@
         text-align: left;
     }
 
+    
+    .icon-container::before {
+        content: "";
+        width: 10px;
+        height: 65px;
+        background: var(--cyan);
+        position: absolute;
+        top: -65%;
+        left: 44px;
+    }
+
 
     .stats-title, 
     .boost-title {
         font-size: 3em;;
+    }
+
+    .boost-title {
+        padding: .5em;
     }
 
     /* ======================== */
@@ -45,7 +60,7 @@
         padding: 0;
         background: var(--white);
         display: grid;
-        grid-template-columns: repeat(3, 150px) 1fr 150px 1fr;
+        grid-template-columns: repeat(7, 1fr);
         align-items: center;
     }
 
@@ -74,7 +89,7 @@
     }
 
     .login {
-        grid-column: 5;
+        grid-column: 6;
         padding: 0;
         justify-self: end;
         padding-right: 40px;
@@ -83,7 +98,7 @@
 
     .sign-up {
         font-size: 18px;
-        grid-column: 6;
+        grid-column: 7;
         margin: 0;
         white-space: nowrap;
     }
